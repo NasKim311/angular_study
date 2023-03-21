@@ -12,4 +12,8 @@ export class AppComponent {
     // -> 최초 단 1번만 동작하는 함수
     console.log('동작');
   }
+
+  public clickAfterPrint(): void {
+    console.log('출력');
+  }
 }
