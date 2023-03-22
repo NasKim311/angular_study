@@ -11,22 +11,5 @@ const array: Array<string> = ['data0', 'data1', 'data2'];
 
 // 각종 기능들
 export class AppComponent {
-  title: string = 'firstStudy';
-
-  showArray: Array<string>;
-
-  // 최초 단 1번만 동작하는 함수
-  constructor() {
-    this.showArray = array;
-  }
-
-  public clickAfterPrint(): void {
-    this._innerFunc();
-    console.log(array);
-    console.log(this.title);
-  }
-
-  private _innerFunc() {
-    array.push('data' + array.length);
-  }
+  visible: boolean = false;
 }

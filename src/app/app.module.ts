@@ -3,9 +3,10 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello/hello.component';
+import { WorldComponent } from './world/world.component';
 
 @NgModule({
-  declarations: [AppComponent, HelloComponent],
+  declarations: [AppComponent, HelloComponent, WorldComponent],
   imports: [BrowserModule],
   providers: [],
   bootstrap: [AppComponent],
