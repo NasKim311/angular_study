@@ -1,7 +1,5 @@
 import { Component } from '@angular/core';
 
-const array: Array<string> = ['data0', 'data1', 'data2'];
-
 // key, value 형식의 내용
 @Component({
   selector: 'app-root',
@@ -11,5 +9,21 @@ const array: Array<string> = ['data0', 'data1', 'data2'];
 
 // 각종 기능들
 export class AppComponent {
-  visible: boolean = false;
+  id: string = '';
+  pwd: string = '';
+
+  visible: boolean = true;
+  visible1: boolean = false;
+  visible2: boolean = false;
+
+  tryToLogin(): void {
+    console.log(this.id, this.pwd);
+    if (this.id == 'admin' && this.pwd == '1234') {
+      this.visible = false;
+      this.visible1 = true;
+    } else if (this.id == 'root' && this.pwd == '1234') {
+      this.visible = false;
+      this.visible2 = true;
+    }
+  }
 }
